@@ -1,0 +1,41 @@
+.footer {
+  background-color: black;
+  color: white;
+  padding: 4rem 2rem;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto 1fr auto;
+  gap: 2rem;
+}
+.footer-grid {
+  grid-column: 1/-1;
+  display: contents;
+}
+.footer-contact {
+  grid-column: 4;
+}
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+.footer-heading {
+  margin-bottom: 1rem;
+}
+.footer-list {
+  list-style: none;
+}
+.footer-list li {
+  margin-bottom: 0.125rem;
+}
+.footer-bottom {
+  grid-column: 5;
+  grid-row: 3;
+  justify-self: end;
+  align-self: flex-end;
+}
