@@ -19,14 +19,13 @@
   align-items: flex-start;
 }
 
-.card-icon {
-  width: 42px;
-  height: 42px;
+.card-icon img {
+  width: 128px;
+  height: 128px;
   display: grid;
   place-items: center;
   border-radius: 10px;
-  font-size: 22px;
-  background: #f3f3f3;
+
   flex: 0 0 auto;
 }
 
