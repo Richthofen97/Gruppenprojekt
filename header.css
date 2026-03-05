@@ -15,8 +15,19 @@
 .logo a {
   color: white;
   text-decoration: none;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo-icon {
+  width: 24px;
+  height: 24px;
 }
 
 .nav {
@@ -32,7 +43,7 @@
 }
 
 .submit {
-  background-color: transparent;
+  background-color: rgb(34, 31, 31);
   border: 1px solid white;
   color: white;
 }
