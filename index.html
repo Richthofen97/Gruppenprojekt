@@ -7,25 +7,15 @@
   </head>
   <body>
     <!-- Headerbereich - Behzad -->
-    <header class="header">
-      <div class="header-container">
-        <div class="logo">
-          <a href="#">
-            <img
-              src="assets/icons/abstract.svg"
-              alt="Abstract logo"
-              class="logo-icon"
-            />
-            Abstract | Help Center
-          </a>
-        </div>
+    <div id="header-placeholder"></div>
 
-        <nav class="nav">
-          <button class="btn submit">Submit a request</button>
-          <button class="btn signin">Sign in</button>
-        </nav>
-      </div>
-    </header>
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header-placeholder").innerHTML = data;
+        });
+    </script>
     <!-- Searchbereich - Nikolai -->
     <div class="search-container">
       <h1>How can we help?</h1>
@@ -122,75 +112,14 @@
 
     <!-- Footerbereich - Nikolai -->
 
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-grid">
-          <!-- Abstract Column -->
-          <div class="footer-column">
-            <h3 class="footer-heading">Abstract</h3>
-            <ul class="footer-list">
-              <li><a href="#">Branches</a></li>
-            </ul>
-          </div>
+    <div id="footer-placeholder"></div>
 
-          <!-- Resources Column -->
-          <div class="footer-column">
-            <h3 class="footer-heading">Resources</h3>
-            <ul class="footer-list">
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Help Center</a></li>
-              <li><a href="#">Release Notes</a></li>
-              <li><a href="#">Status</a></li>
-            </ul>
-          </div>
-
-          <!-- Community Column -->
-          <div class="footer-column">
-            <h3 class="footer-heading">Community</h3>
-            <ul class="footer-list">
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Dribbble</a></li>
-              <li><a href="#">Podcast</a></li>
-            </ul>
-          </div>
-
-          <!-- Company Column -->
-          <div class="footer-column">
-            <h3 class="footer-heading">Company</h3>
-            <ul class="footer-list">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Legal</a></li>
-            </ul>
-          </div>
-
-          <!-- Contact Column -->
-          <div class="footer-column footer-contact">
-            <h3 class="footer-heading">Contact Us</h3>
-            <p class="contact-email">info@abstract.com</p>
-          </div>
-          <div class="logo">
-          <a href="#">
-            <img
-              src="assets/icons/abstract.svg"
-              alt="Abstract logo"
-              class="logo-icon"
-            />
-          </a>
-        </div>
-        
-
-        <!-- Bottom Section -->
-        <div class="footer-bottom">
-          <div class="copyright">
-            <p>© Copyright 2022</p>
-            <p>Abstract Studio Design, Inc.</p>
-            <p>All rights reserved</p>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <script>
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
   </body>
 </html>
