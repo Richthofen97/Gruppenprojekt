@@ -10,7 +10,6 @@
 .footer-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: auto 1fr auto;
   gap: 2rem;
 }
 .footer-grid {
